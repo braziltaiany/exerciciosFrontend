@@ -1,6 +1,11 @@
+#header {
+    padding-top: 0px;
+}
 
 .titulo-principal{
-    padding-left:20px ;
+    padding-left:20px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
 }
 
 .principal {
@@ -31,20 +36,26 @@ em strong {
 
 .beneficios {
     background: #FFFFFF;
-    padding: 20px;
 }
 
 .itens {
     font-style: italic;
+    margin: 20px;
+    
 }
 
-ul{
+.lista-itens{
     display: inline-block;
-    vertical-align: top;
-    width: 20%;
     margin-right: 15%;
+    vertical-align: top;
+    margin: 0 20%;
 }
 
 .imagembeneficios {
-    width: 50%;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
 }
+
+
+
