@@ -1,0 +1,39 @@
+.banner {
+    width: 100%;
+}
+
+section {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-section {
+    text-align: center;
+    font-size: 2em;/*medida proporcional a medida de pixel: 2m é o dobro da fonte base*/
+    margin: 0 0 1em;
+    clear: left;/*Limpa o efeito do float*/
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 3px;
+}
+
+.imagembeneficios{
+    width: 60%;
+    border-radius: 3px;
+}
+
