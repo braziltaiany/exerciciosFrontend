@@ -29,39 +29,48 @@
 
         <main>
             <form>
-                <div>
-                    <!-- <p>Seu contato</p> -->
+                <fieldset>
+                    <!-- tipos de input para mobile nesse link -> http://mobileinputtypes.com/ -->
                     <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nomesobrenome" class="input-padrao">
+                    <input type="text" id="nomesobrenome" class="input-padrao" required >
 
                     <label for="email">Email</label>
-                    <input type="text" id="email"  class="input-padrao">
+                    <input type="email" id="email"  class="input-padrao" placeholder="seuemail@dominio.com" required>
 
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone"  class="input-padrao">
+                    <input type="tel" id="telefone"  class="input-padrao" placeholder="(XX) XXXX-XXXX" required>
                     
                     <label for="mensagem">Mensagem</label>
-                    <textarea  id="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
-                </div>
+                    <textarea  id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+                </fieldset>
                
-                <div>
-                    <p>Como prefere nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
                     
                     <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
                                        
-                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp">WhatsApp</label>
-                </div>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
 
-                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
-                
-
+                <fieldset>
+                    <legend>Qual horário prefere ser antendido?</legend>
+                    <select>
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+               
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+            
+                <input class="enviar" type="submit" value="Enviar formulário">
             </form>
 
         </main>
 
         <footer>
-            <img src="../image/logo-branco.png">
+            <img src="../image/logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyrigh">&copy; Copyright Barbearia Alura - 2021</p>
         </footer>       
     </body>
