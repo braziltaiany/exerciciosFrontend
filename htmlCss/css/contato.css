@@ -57,3 +57,50 @@ thead {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
+
+@media screen and (max-width: 480px) {
+    #header .caixa, main {
+        width: auto;      
+    }
+
+    .caixa h1 {
+        text-align: center;
+
+    }
+    .caixa nav {
+        position: static;
+    }
+    
+    form {
+        margin: 40px 1.5em;
+    }
+    
+    .input-padrao {
+        margin-top:5px;
+        padding: 10px 25%;
+    }
+     table {
+        width: 90%;
+        margin-left: 20px;
+    } 
+
+    .enviar{
+        width: 100%;
+        margin: 0 0 25px  0;
+    }
+
+    select {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form fieldset > legend {
+        padding-top: 25px;
+
+    }
+
+    .checkbox {
+        margin: 20px 0 20px 0;
+    }
+
+}

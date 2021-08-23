@@ -5,7 +5,7 @@
 }
 
 .produtos li{
-    display: inline-block;
+    display: inline-block; 
     text-align: center;
     width: 30%;
     vertical-align: top;
@@ -56,4 +56,32 @@ footer {
     color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+    #header .caixa,
+    .produtos,
+    .produtos li,
+    .produto-descricao,
+    .produto-preco {
+        width: auto;
+        
+    }
+
+    .caixa h1 {
+        text-align: center;
+
+    }
+
+    .caixa nav {
+        position: static;
+    }
+
+    .produtos {
+        padding: 25px; 
+    }
+    
+    .produtos li {
+        margin: 2em auto; 
+    }
 }
