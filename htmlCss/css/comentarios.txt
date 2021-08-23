@@ -1,0 +1,72 @@
+CSS HOME
+
+ SELETORES AVANÇADOS 
+
+/* SELETORES AVANÇADOS 
+.titulo-section:first-letter {
+    font-weight: bold;
+}
+
+.titulo-section:before {
+    content: "[ ";
+}
+
+.titulo-section:after {
+    content: " ]";
+} */
+
+Seletor >, para acessar os filhos de determinado elemento. Por 
+main > p{
+    background: red;
+ } 
+
+ Seletor ~, para acessar todos os irmãos de determinado elemento
+ img ~ p {
+    background: blue;  
+ }
+ 
+ Seletor +, para acessar o primeiro irmão de determinado elemento.
+ .principal img + p {
+    background: green;  
+ }
+
+ exclusão de elementos
+ Seletor not, para acessar os elementos, exceto algum. 
+ .principal p:not(#missao) {
+     background: orange;
+ }
+
+ html
+ <h2>
+<section>
+    <h2>
+    <p>
+    <p>
+    <h2>
+
+    EXEMPLOS
+css
+section > p + h2
+último h2 é filho direto da section e irmão do p
+ */
+
+
+ /* CALCULOS COM CSS 
+ .utensilios img {
+    width: calc(40% -(26px * 4)/ 4);
+ }
+
+ Como usar as medidas proporcionais para deixar um elemento de 100% de largura com o equivalente a um terço do elemento pai, menos 10px?
+ width: calc( (100% / 3) - 10px )
+ width: calc( 33% - 10px )
+ 
+
+ /* .itens:nth-child(4) {
+    font-weight: bold;
+} */
+
+/* seleciona todos os elementos filhos que são pares da lista
+.itens:nth-child(2n) {
+    font-weight: bold;
+} */ 
+ 

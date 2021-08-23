@@ -1,10 +1,6 @@
 .banner {
     width: 100%;
-}
-
-section {
-    width: 940px;
-    margin: 0 auto;
+    opacity: 0.7;
 }
 
 .titulo-section {
@@ -12,6 +8,13 @@ section {
     font-size: 2em;/*medida proporcional a medida de pixel: 2m é o dobro da fonte base*/
     margin: 0 0 1em;
     clear: left;/*Limpa o efeito do float*/
+}
+
+.principal { 
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p {
@@ -25,15 +28,100 @@ section {
 .principal em{
     font-style: italic;
 }
+
 .utensilios {
     width: 120px;
     float: left;
     margin: 0 20px 20px 0;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
-.imagembeneficios{
+.mapa {
+    padding:  3em 0; 
+    background: linear-gradient(#FEFEFE, #888888);
+    /* background: linear-gradient(90deg, orange 50%, blue, red, black);
+    background: radial-gradient( orange 50%, blue, red, black);
+    */
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+
+}
+
+.itens::before{
+    content:"★";
+}
+
+
+.imagem-beneficios {
     width: 60%;
-    border-radius: 3px;
+    border-radius: 2px;
+    opacity: 1;
+    transition: 400ms;
+    /* criar sombras nos elementos
+    box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5); */
+    box-shadow: 10px 5px 10px 0 #000000;
 }
 
+.imagem-beneficios:hover{
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;     
+}
+
+/* Adaptando para mobile - transformando para responsivo */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
