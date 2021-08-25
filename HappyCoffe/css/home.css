@@ -1,0 +1,96 @@
+body {
+    background: #FFD41C;
+}
+
+header img{
+    width: 15em;
+    margin: 25px 0 25px 0 ;
+}
+
+.menu-navegacao {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 10em;
+    right: 0;
+     
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#382B09 ;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+nav a:hover {
+    color: #877f6b;
+    text-decoration: underline;
+}
+
+
+main h1 {
+    font-weight: bold;
+    color:#382B09 ;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    width: 940px;
+    margin: 0 auto;  
+}
+
+
+.principal p:first-child {
+    position: absolute;
+    left: 25%;
+    right: 61.53%;
+    top: 33%;
+    display: grid;
+    justify-content: start;
+    align-content: space-around;
+    
+    font-size: 65px;
+    font-weight: bold;
+    color:#382B09 ;
+    font-family: 'Nunito Sans', sans-serif;
+      
+}
+
+.principal p:nth-child(2){
+    position: absolute;
+    left: 25%;
+    top: 85%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    color:#382B09 ;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30em;
+    padding-top: 2em;
+}
+.imagem-banner {
+    width: 35%;
+    opacity: 0.9;
+}
+
+

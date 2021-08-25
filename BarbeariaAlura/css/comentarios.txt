@@ -49,6 +49,7 @@ css
 section > p + h2
 último h2 é filho direto da section e irmão do p
  */
+ fieldset > label + legend
 
 
  /* CALCULOS COM CSS 
@@ -70,3 +71,35 @@ section > p + h2
     font-weight: bold;
 } */ 
  
+
+
+  .caixa, main{
+        width: auto;
+    }
+    
+    .caixa h1 {
+        text-align: center;
+    }
+
+    .caixa nav {
+        text-align: center;
+        position: static;
+    }
+
+    .produtos {
+        display: grid;
+        padding: 25px; 
+    }
+    
+    .produtos li {
+        margin: 2em auto; 
+    }
+
+    fieldset,
+    .input-padrao, 
+    label,
+    .checkbox, 
+    .enviar,
+    table, 
+    thead,
+    .tabela-horarios
