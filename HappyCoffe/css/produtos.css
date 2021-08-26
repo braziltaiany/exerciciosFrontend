@@ -1,0 +1,85 @@
+.menu-navegacao{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFD41C;
+    overflow-x: hidden;
+    border-radius: .5rem;
+}
+.menu-navegacao img {
+    width: 12em;
+    margin: 25px 2.5px 50px 0 ;
+}
+
+.menu-navegacao a{
+    color:#382B09 ;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:700;
+    padding: 16px;
+    text-decoration: none;
+    display: block; 
+    
+}
+
+.menu-navegacao a:hover {
+background-color: #877f6b34;
+color: #877f6b;
+}
+
+main, footer {
+    margin-left: 200px;
+    padding-left: 20px;
+    color:#382B09 ;
+    font-family: 'Nunito Sans', sans-serif;
+    /* background: #F3f3f3; */
+}
+
+ul{
+    margin-left: 50px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    margin: 50px 0 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #382B09;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+    
+}
+
+.produtos li:active{
+    border-color: #877f6b;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos img {
+width: 90%;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
