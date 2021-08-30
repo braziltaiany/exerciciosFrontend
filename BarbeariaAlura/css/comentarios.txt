@@ -1,3 +1,7 @@
+Melhorias
+    1.colocar Carousel com css puro na pagina de produtos
+    https://www.w3schools.com/howto/howto_js_slideshow.asp
+
 CSS HOME
 
  SELETORES AVANÇADOS 
@@ -103,3 +107,6 @@ section > p + h2
     table, 
     thead,
     .tabela-horarios
+
+
+    

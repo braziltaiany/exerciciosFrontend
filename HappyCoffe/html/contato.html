@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyCoffe</title>
+    
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-navegacao">
+            <h1><img src="../img/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/produtos.html">Produtos</a></li>
+                    <li><a href="../html/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>     
+        <h1>Contato</h1>
+        <form>
+            <fieldset>
+                <label>Nome e Sobrenome<input type="text" id="nomesobrenome" class="input-padrao" required></label>
+                <label>Email<input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required></label>
+                <label>Telefone<input type="tel" id="telefone" class="input-padrao"placeholder="(XX) XXXX-XXXX" required></label> 
+                <label>Mensagem<textarea id="mensagem" cols="30" rows="10"class="input-padrao" required></textarea></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                <label><input type="radio" name="contato" value="tel" id="radio-telefone">Telefone</label>
+                <label><input type="radio" name="contato" value="tel" id="radio-whatsapp" checked>WhatsApp</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+            <input class="enviar" type="submit" value="Enviar formulário">
+        </form>
+        <table id= "tabela-horarios" class="tabela-horarios">
+            <caption>Horário de Funcionamento</caption>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td>
+                    <td>9h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>10h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="mapa">
+            <h3 class="titulo-mapa">Nosso Estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+            <div class="mapa-conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2780051701934!2d-43.179411485400415!3d-22.9031146434971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5ee49fa5c1%3A0xd55f56b6d0a7048e!2sR.%20do%20Ouvidor%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1630270331635!5m2!1spt-BR!2sbr" width="420" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
